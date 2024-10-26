@@ -1,0 +1,27 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% load bootstrap_icons %}
+
+{% block title %} Otuleni miłością | O mnie {% endblock %}
+
+{% block content %}
+            <section class="main__container">
+                <div class="main__row">
+                    <img src="{% static 'PHOTOS/photo1.jpg' %}" class="main__photos">
+                    <div class="main__col">
+                        <h2>Kilka słów o mnie</h2>
+                        <p>Cześć! Jestem Ola i na co dzień jestem położną, pracującą na bloku porodowym i w szkole rodzenia.
+Z rodzicami, którzy mają swoją pociechę już w domu, spotykam się na konsultacjach w roli Doradcy
+Noszenia. Uprawnienia zdobyłam w szkole Noszenia ClauWi, która powstała w 1999 roku w
+Niemczech i była jedną z pierwszych tego typu instytucji w Europie. ClauWi® szkoli Doradców Noszenia
+w kilku krajach Europy, w USA, Izraelu, Kanadzie i Australii.</p>
+                        <h2>Moja krótka historia</h2>
+                        <p>Swoją wiedzę aktualizuję co dwa lata na spotkaniach doszkalających „Refresh” oraz pogłębiam ją
+uczestnicząc w konferencjach na terenie całego kraju. W swojej pracy stawiam na przekazanie
+merytorycznej wiedzy, w sposób łatwy i zrozumiały dla każdego, aby zwiększyć świadomość dotyczącą
+bezpiecznego noszenia dzieci. Konsultacje ze mną wyróżniają się indywidualnym podejściem oraz
+przyjazną atmosferą, dzięki której pozbywamy się stresu związanego z pierwszymi próbami motania.</p>
+                    </div>
+                </div>
+            </section>
+{% endblock %}

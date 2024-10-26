@@ -1,0 +1,92 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% load bootstrap_icons %}
+
+{% block title %} Otuleni miłością | Oferta {% endblock %}
+
+{% block content %}
+<section class="main__container">
+    <div class="oferta__row">
+        <div class="oferta__col">
+            <div class="card__inner">
+                <div class="card__face card__face--front photo__1">
+                    <h2>Cennik usług</h2>
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="card__content">
+                        <div class='card__body'>
+                            <table class="oferta__table">
+                                <thead>
+                                    <tr>
+                                        <th>Usługa</th>
+                                        <th>Czas</th>
+                                        <th>Cena</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Nauka pierwszego wiązania - konsultacja dla dwóch osób</td>
+                                        <td>3h</td>
+                                        <td>350zł</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nauka pierwszego wiązania - konsultacja dla jednej osoby</td>
+                                        <td>2h</td>
+                                        <td>250zł</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nauka kolejnego wiązania</td>
+                                        <td>1,5h</td>
+                                        <td>200zł</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Korekta wiązania</td>
+                                        <td>1h</td>
+                                        <td>150zł</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Konsultacja online</td>
+                                        <td>2h</td>
+                                        <td>200zł</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wypożyczenie chusty</td>
+                                        <td>7 dni</td>
+                                        <td>70zł</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <span class="oferta__komentarz">
+                                <br>
+                                <p>*Dojazd w cenie konsultacji do 20km z Katowic i Piekar Śląskich</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="oferta__col">
+            <div class="card__inner">
+                <div class="card__face card__face--front photo__2">
+                    <h2>Jak wyglądają konsultacje</h2>
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="card__content">
+                        <div class='card__body'>
+                            <ul>
+                                <li>Teoria: czyli poznajemy prawidłowe ułożenie dziecka w chuście oraz omawiamy kiedy dziecko mówi nam swoim ciałem, że "coś jest nie tak"</li>
+                                <li>Praktyka z lalkami, dzięki czemu poznajemy krok po kroku technikę wiązania oraz nabieramy zaufania do chusty</li>
+                                <li>Praktyka z dzieckiem, czyli szlifujemy umiejętności zdobyte na lali</li>
+                                <li>Dobranie chusty - jeśli mota dwójka rodziców, dobieramy parametry tak, żeby można było kupić wspólną chustę</li>
+                                <li>Omówienie ubioru podczas chustowania do różnych pór roku oraz wskazówki chustowe, czyli co mogę zrobić żeby było bardziej funkcjonalnie i praktycznie</li>
+                                <li>Nagranie filmiku instruktażowego z wiązania które będziemy motać</li>
+                                <li>Po konsultacji zostajemy w kontakcie online i robimy korekty pierwszych Państwa wiązań</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

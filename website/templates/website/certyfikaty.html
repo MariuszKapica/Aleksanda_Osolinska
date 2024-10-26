@@ -1,0 +1,26 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% load bootstrap_icons %}
+
+{% block title %} Otuleni miłością | Certyfikaty {% endblock %}
+
+{% block content %}
+ <section class="main__container">
+             <h1>Moje certyfikaty chustonoszenia</h1>
+    <div class="main__row">
+            <img src="{% static 'PHOTOS/cert22.png' %}" class="main__photos" onclick="openModal(this.src)">
+            <img src="{% static 'PHOTOS/cert33.png' %}" class="main__photos" onclick="openModal(this.src)">
+    </div>
+     <div class="main__row">
+         <img src="{% static 'PHOTOS/cert11.png' %}" class="main__photos" onclick="openModal(this.src)">
+    </div>
+ </section>
+
+<!-- Modal -->
+<div id="imageModal" class="modal" style="display: none;">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+
+{% endblock %}

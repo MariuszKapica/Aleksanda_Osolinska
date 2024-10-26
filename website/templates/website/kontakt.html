@@ -1,0 +1,26 @@
+{% extends 'website/base.html' %}
+{% load crispy_forms_tags %}
+{% load crispy_forms_field %}
+{% load crispy_forms_filters %}
+
+{% block title %} Otuleni miłością | Kontakt {% endblock %}
+
+{% block content %}
+<div class="ContactForm__header">
+    <h1>Masz pytania? Chcesz zapisać się na konsultację chustonoszenia? </h1>
+    <br>
+    <p>Zadzwoń pod numer <a class="ContactForm__item" href="tel:+48784850167">784-850-167</a> lub napisz na
+        <a class="ContactForm__item" href="https://wa.me/784850167">WhatsAap.</a></p>
+    <p>Wypełnij formularz, skontaktuję się z Tobą i wspólnie nauczymy się wiązać.</p>
+</div>
+
+
+<form class="ContactForm" method="POST" novalidate>
+    {% csrf_token %}
+    {{ form.Name|as_crispy_field}}
+    {{ form.Phone|as_crispy_field}}
+    {{ form.Email|as_crispy_field}}
+    {{ form.Message|as_crispy_field}}
+        <button class="ContactForm__button" type="submit">Wyślij</button>
+</form>
+{% endblock %}
