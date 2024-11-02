@@ -56,8 +56,8 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'serwer2427294.home.pl'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
 EMAIL_HOST_USER = 'kontakt@otulenimiloscia.com.pl'
 EMAIL_HOST_PASSWORD = 'Lgm9GCke'
 NOTIFY_EMAIL = 'kontakt@otulenimiloscia.com.pl'
