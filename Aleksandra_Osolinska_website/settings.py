@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-p*n&$=k$@m5=c5+!=+zy+3z8m3$d&%g@+m#zpu^nugk$@*xkq)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '1309-2a02-a310-c1e2-0-1d73-a076-8367-40a0.ngrok-free.app', '*',
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '1309-2a02-a310-c1e2-0-1d73-a076-8367-40a0.ngrok-free.app',
                  '52.18.97.167', 'www.otulenimiloscia.com.pl', 'otulenimiloscia.com.pl']
 
 
@@ -55,11 +55,17 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_HOST = 'smtp.poczta.onet.pl'
+#EMAIL_USE_SSL = True
+#EMAIL_PORT = 465
+#EMAIL_HOST_USER = 'michalkapica@onet.pl'
+#EMAIL_HOST_PASSWORD = 'AGWAllEs36()jag#%'
+#NOTIFY_EMAIL = 'michalkapica@onet.pl'
 EMAIL_HOST = 'serwer2427294.home.pl'
-EMAIL_PORT = 465
 EMAIL_USE_SSL = True
+EMAIL_PORT = 465
 EMAIL_HOST_USER = 'kontakt@otulenimiloscia.com.pl'
-EMAIL_HOST_PASSWORD = 'Lgm9GCke'
+EMAIL_HOST_PASSWORD = '2ssPc3qq83'
 NOTIFY_EMAIL = 'kontakt@otulenimiloscia.com.pl'
 
 MIDDLEWARE = [
