@@ -60,13 +60,8 @@ EMAIL_USE_SSL = True
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'michalkapica@onet.pl'
 EMAIL_HOST_PASSWORD = 'AGWAllEs36()jag#%'
-#NOTIFY_EMAIL = 'michalkapica@onet.pl'
-#EMAIL_HOST = 'serwer2427294.home.pl'
-#EMAIL_USE_SSL = True
-#EMAIL_PORT = 465
-#EMAIL_HOST_USER = 'kontakt@otulenimiloscia.com.pl'
-#EMAIL_HOST_PASSWORD = '2ssPc3qq83'
-NOTIFY_EMAIL = 'kontakt@otulenimiloscia.com.pl'
+NOTIFY_EMAIL = ['michalkapica@onet.pl', 'tiana1@onet.pl']
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

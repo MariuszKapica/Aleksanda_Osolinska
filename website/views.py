@@ -18,7 +18,7 @@ def home(request):
             message_body = f"""Otrzymano zgłoszenie od {name} z adresu e-mail {email}.\nNumer telefonu podany w zgłoszeniu: {phone}.\n \nTreść zgłoszenia:\n{message}
             """
             send_mail(subject=subject, message=message_body, from_email=settings.EMAIL_HOST_USER,
-                      recipient_list=[settings.NOTIFY_EMAIL], fail_silently=False)
+                      recipient_list=settings.NOTIFY_EMAIL, fail_silently=False)
             return render(request, 'website/kontakt_success.html', {})
     else:
         form = ContactForm()
@@ -51,7 +51,7 @@ def kontakt(request):
                 phone = form.cleaned_data['Phone']
                 message_body = f"""Otrzymano zgłoszenie od {name} z adresu e-mail {email}.\nNumer telefonu podany w zgłoszeniu: {phone}.\n \nTreść zgłoszenia:\n{message}
                 """
-                send_mail(subject=subject, message=message_body, from_email= settings.EMAIL_HOST_USER, recipient_list= [settings.NOTIFY_EMAIL], fail_silently=False)
+                send_mail(subject=subject, message=message_body, from_email= settings.EMAIL_HOST_USER, recipient_list=settings.NOTIFY_EMAIL, fail_silently=False)
                 return render(request, 'website/kontakt_success.html',{})
         else:
             form = ContactForm()
