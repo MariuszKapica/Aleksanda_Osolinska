@@ -8,13 +8,21 @@
 {% block content %}
 <div class="ContactForm__header">
     <h1>Masz pytania? Chcesz zapisać się na konsultację chustonoszenia? </h1>
-    <br>
+    <ul>
+        <li>Zadzwoń pod numer: <a class="ContactForm__item" href="tel:+48784850167">784-850-167</a></li>
+        <li>Napisz lub zadzwoń na: <a class="ContactForm__item" href="https://wa.me/784850167">WhatsAap</a></li>
+        <li>Napisz email na: <a class="ContactForm__item">tiana1@onet.pl</a></li>
+    </ul>
+    <h4> Nawiążmy kontakt i wspólnie nauczymy się wiązać!</h4>
+    <!--
     <p>Zadzwoń pod numer <a class="ContactForm__item" href="tel:+48784850167">784-850-167</a> lub napisz na
         <a class="ContactForm__item" href="https://wa.me/784850167">WhatsAap.</a></p>
+    <p>Wyślij mi maila pod: tiana1@onet.pl, skontaktuję się z Tobą i wspólnie nauczymy się wiązać.</p>
     <p>Wypełnij formularz, skontaktuję się z Tobą i wspólnie nauczymy się wiązać.</p>
+     -->
 </div>
 
-
+<!--
 <form class="ContactForm" method="POST" novalidate>
     {% csrf_token %}
     {{ form.Name|as_crispy_field}}
@@ -23,4 +31,6 @@
     {{ form.Message|as_crispy_field}}
         <button class="ContactForm__button" type="submit">Wyślij</button>
 </form>
+-->
+
 {% endblock %}
